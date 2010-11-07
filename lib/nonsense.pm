@@ -3,11 +3,15 @@ package nonsense;
 use strict;
 use warnings;
 use true;
-use namespace::autoclean;
+use namespace::autoclean ();
 
 sub unimport {
+    my $caller = caller;
+
     strict->import;
     warnings->import;
     true->import;
-    namespace::autoclean->import;
+    namespace::autoclean->import(
+        -cleanee => $caller,
+    );
 }
