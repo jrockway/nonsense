@@ -48,3 +48,40 @@ sub unimport {
 
     return $into;
 }
+
+__END__
+
+=head1 SYNOPSIS
+
+    package Foo;
+    no nonsense;
+
+=head1 DESCRIPTION
+
+This is my contribution to the module-that-enables-pragmas-for-me
+meme.  It enables strict, warnings, and automatically makes your
+module return true.
+
+Andm let's be honest, "no nonsense" is the best name for a pragma
+ever.
+
+=head1 BUGS
+
+If you C<use nonsense>, strict and warnings will not be enabled.  What
+nonsense!
+
+=head1 TODO
+
+If you look at the commented-out code in C<unimport>, I might extend
+this module to allow even more boilerplate-free programming.  If you
+want a type library, you just say C<no nonsense 'type library'>.  If
+you want a class, you just say C<no nonsense 'class'>.
+
+This module should integrate with the L<less> pragma, so the degree of
+nonsense that your module
+
+=head1 EVAN CARROLL
+
+Someone mentioned that releasing a module like this makes me look like
+Evan Carroll.  I disagree, as the words "but maintained" appear
+nowhere in the program text.
