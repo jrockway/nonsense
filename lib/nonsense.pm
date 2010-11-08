@@ -41,9 +41,9 @@ sub unimport {
     # }
 
     # if( $command eq 'class' || $command eq 'role' ){
-    #     namespace::autoclean->import(
-    #         -cleanee => $into,
-    #     );
+    namespace::autoclean->import(
+        -cleanee => $into,
+    );
     # }
 
     return $into;
@@ -59,10 +59,10 @@ __END__
 =head1 DESCRIPTION
 
 This is my contribution to the module-that-enables-pragmas-for-me
-meme.  It enables strict, warnings, and automatically makes your
-module return true.
+meme.  It enables strict, warnings, automatically makes your module
+return true, and automatically cleans out your namespace.
 
-Andm let's be honest, "no nonsense" is the best name for a pragma
+And, let's be honest, "no nonsense" is the best name for a pragma
 ever.
 
 =head1 BUGS
